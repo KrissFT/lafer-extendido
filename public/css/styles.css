@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Uchen', serif;
+}
+.all-content{
+    background: hsl(0, 0%, 93%);
+}
+#navbar{
+    background-color: #ec1e28;
+    padding-left: 60px;
+    font-weight: bold;
+}
+#logo{
+    font-size: 23px;
+    color: white;
+}
+#logo img{
+    margin-bottom: 15px;
+}
+.navbar-nav{
+    margin-left: 10px;
+}
+.nav-link{
+    color: rgb(212, 212, 212);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+.nav-link:hover{
+    background-color: rgb(245, 44, 44);
+    color: white;
+    border-radius: 5px;
+}
+.icons{
+    margin-left: 30px;
+}
+.icons img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: translateY(-5px);
+}
+
+.home{
+    width: 100%;
+    height: 88.5vh;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 400px;
+}
+.home .img img{
+    width: 100%;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+}
+.content h3{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.content h2{
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+.changecontent::after{
+    content: ' ';
+    color: rgb(255, 62, 62);
+    animation: changetext 10s infinite linear;
+    font-weight: bold;
+}
+
+.content p{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.content .btn{
+    width: 110px;
+    height: 38px;
+    background-color: #fc3030;
+    color: white;
+}
+#box{
+    margin-top: 50px;
+}
+#box .card{
+    box-shadow: 0px 0px 5px rgb(255, 254, 254);
+    margin-top: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#box .card:hover{
+    transform: translateY(-10px);
+}
+.banner{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px rgb(228, 228, 228);
+    margin-top: 50px;
+}
+.banner .img{
+    flex: 1 1 400px;
+}
+.banner .img img{
+    width: 100%;
+}
+.banner .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+.banner .content h3{
+    color: rgb(252, 41, 41);
+    font-weight: bold;
+}
+.banner .content h2{
+    font-size: 50px;
+    color: rgb(250, 53, 53);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+.banner .content p{
+    color: rgb(236, 46, 46);
+}
+#btnorder button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 5px;
+    background-color: rgb(230, 54, 54);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#product-cards h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgb(247, 42, 42);
+    text-shadow: 1px 1px 1px rgb(255, 247, 247);
+    border-bottom: 2px solid rgb(226, 226, 226);
+}
+#product-cards .card{
+    background-color: rgb(247, 71, 71);
+    box-shadow: 0 0 3px rgb(245, 244, 244);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+#product-cards .card:hover .overlay{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+}
+.overlay i img{
+    background-color: #fc4646;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    padding: 7px;
+    margin: -20%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.overlay .btn-secondary{
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+#product-cards h3{
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+#product-cards p{
+    color: #fafafa;
+    font-weight: bold;
+}
+#product-cards h6{
+    font-size: 20px;
+    color: #2e1700;
+    font-weight: bold;
+}
+#product-cards h6  button{
+    width: 100px;
+    height: 26px;
+    font-size: 15px;
+    background: transparent;
+    letter-spacing: 3px;
+    border: 2px solid #ff3a3a;
+    border-radius: 5px;
+    float: none;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#product-cards h6  button:hover{
+    background-color: #ff2424;
+    color: white;
+}
+#about{
+    margin-top: 50px;
+}
+#about h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgb(248, 46, 46);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 59, 59);
+}
+#about .card{
+    background-color: rgb(253, 49, 49);
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+#about p{
+    color: rgb(255, 55, 55);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    font-weight: bold;
+}
+#bt button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px;
+    background-color: rgb(250, 60, 60);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#contact{
+    margin-top: 100px;
+}
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgb(253, 65, 65);
+    text-shadow: 1px 1px 1px rgb(253, 253, 253);
+    border-bottom: 2px solid rgb(240, 240, 240);
+}
+#contact input{
+    background-color: rgb(253, 54, 54);
+}
+#contact input::placeholder{
+    color: rgb(255, 255, 255);
+}
+#contact textarea{
+    background-color: rgb(255, 255, 255);
+}
+#contact textarea::placeholder{
+    color: white;
+}
+#messagebtn{
+    text-align: center;
+}
+#messagebtn button{
+    width: 200px;
+    height: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#messagebtn button:hover{
+    background-color: rgb(248, 247, 247);
+}
+#footer{
+    width: 100%;    
+    background-color: #f83c3c;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+    margin-top: 100px;
+}
+#footer h1{
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icons i{
+    background-color: white;
+    color: #ff4747;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons i:hover{
+    background-color: rgb(255, 56, 56);
+    color: white;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credite{
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    background-color: rgb(219, 68, 41);
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+.pan-1 {
+    text-align: center;
+    line-height: 100vh;
+}
+
+.star .checked{
+    color: yellow;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+.claseFormulario {
+    background-color: #a7530f;
+    padding-bottom: 20px;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 10px;
+    border: solid #dd2727;
+}
+
+.tableFormat table {
+    margin: 0 auto;
+}
+
+.form button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px;
+    background-color: #d43030;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.fa-solid {
+    width: 2rem;
+    height: 2rem;
+    padding-top: 0.5rem;
+    background-color: black
+}
+
+label {
+    cursor: pointer;
+    display: block;
+}
+
+
+.col-md-3.py-3.py-md-0 {
+    margin-bottom: 1rem;
+}
+
+.col-md-3.py-3.py-md-0.boton {
+    padding: 10%;
+    margin-top: 10%;
+    color:white;
+    text-align: center;
+}
+
+.i-img {
+    color:white;
+    text-align: center;
+    margin-left: -1rem;
+}
+
+.card {
+    word-wrap: normal;
+}
+
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: #000;
+    z-index: 1;
+}
+
+.spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: #3d5af1 transparent #3d5af1 transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
